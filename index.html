@@ -9,12 +9,24 @@
       body {
         margin: 0;
       }
-      .top {
-        display: inline;
-        margin-right: 6%;
-        margin-left: 6%;
+      .header{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: grey;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
         position: sticky;
         top: 0;
+      }
+      .header a{
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif
+      }
+      .header a:hover{
+        color: red;
       }
       #landingPic {
         float: right;
@@ -30,15 +42,14 @@
     </style>
   </head>
   <body>
-    <div class="top">
-      <ul>
-        <li>LOGO</li>
-        <li>MOUNTAINS</li>
-        <li>MAP</li>
-        <li>FEATURES</li>
-        <li>ABOUT</li>
+      <ul class="header">
+        <li><a href="#">LOGO</a></li>
+        <li><a href="mountains.html">MOUNTAINS</a></li>
+        <li><a href="#map">MAP</a></li>
+        <li><a href="#features">FEATURES</a></li>
+        <li><a href="about.html">ABOUT</a></li>
       </ul>
-    </div>
+
     <ul>
       <li>
         <img
@@ -84,5 +95,7 @@
       laborum nesciunt debitis sunt pariatur. Laudantium ipsa quia pariatur
       tempora quas sint rerum esse saepe? Architecto, hic! Deserunt, laborum?
     </p>
+    <h1 id="map">MAP</h1>
+    <h1 id="features">FEATURES</h1>
   </body>
 </html>
