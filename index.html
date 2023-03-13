@@ -62,6 +62,23 @@
         display: flex;
         justify-content: center;
       }
+
+      .container{
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .grid_item img{
+        object-fit: cover;
+
+
+      }
+      .grid_item a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
     </style>
   </head>
   <body>
@@ -97,5 +114,13 @@
         ></iframe>
       </div>
     <h1 id="features" class="title">FEATURES</h1>
+    <div class="container">
+      <div class="grid_item"><img src="https://blog.sport-conrad.com/wp-content/uploads/2021/11/header-atomic-revoshock-blog-1.jpg" alt="Atomic" height="400px" width="300px"></div>
+      <div class="grid_item"><img src="https://www.loonmtn.com/assets//images/Loon/Headers_1030/products/IKONPass_1030%280%29.jpg" alt="IKon" height="400px" width="300px"></div>
+      <div class="grid_item"><img src="http://d20aeo683mqd6t.cloudfront.net/articles/title_images/000/038/357/medium/niseko-japan-s611547902.jpg?2021" alt="Niseko" height="400px" width="300px"></div>
+      <div class="grid_item"><a href="https://www.atomic.com/en-us">GEAR UP NOW</a></div>
+      <div class="grid_item"><a href="https://www.ikonpass.com/">GET YOUR PASS</a></div>
+      <div class="grid_item"><a href="https://niseko-village.com/en/">EXPERINCE JAPOW</a></div>
+    </div>
   </body>
 </html>
