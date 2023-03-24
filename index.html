@@ -10,6 +10,10 @@
         margin: 0;
         background-color: #fffdfd;
       }
+      .logo {
+        margin-top: -5px;
+        height: 30px;
+      }
       .header {
         display: flex;
         justify-content: space-evenly;
@@ -28,7 +32,7 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       .header a:hover {
-        color: red;
+        color: #cb2b19;
       }
       .over {
         display: flex;
@@ -57,33 +61,62 @@
         font-size: 45px;
         font-weight: 750;
         margin: 0;
+        margin-top: 30px;
       }
       .map {
         display: flex;
         justify-content: center;
       }
-
-      .container{
-        background-color: yellow;
+      .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          "img1 img2 img3"
+          "link1 link2 link3";
+        justify-items: center;
       }
-      .grid_item img{
+      .imgs img {
         object-fit: cover;
-
-
+        object-position: center bottom;
+        height: 500px;
+        width: 400px;
       }
-      .grid_item a{
-        display: block;
-        text-align: center;
+      .links {
+        display: flex;
+        justify-content: center;
+      }
+      .links a {
         text-decoration: none;
+        color: black;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 750;
+      }
+      .grid_item1 {
+        grid-area: img1;
+      }
+      .grid_item2 {
+        grid-area: img2;
+      }
+      .grid_item3 {
+        grid-area: img3;
+      }
+      .grid_item4 {
+        grid-area: link1;
+      }
+      .grid_item5 {
+        grid-area: link2;
+      }
+      .grid_item6 {
+        grid-area: link3;
       }
     </style>
   </head>
   <body>
     <ul class="header">
-      <li><a href="#">LOGO</a></li>
+      <li>
+        <a href="#"><img class="logo" src="images/logo2.png" alt="Logo" /></a>
+      </li>
       <li><a href="mountains.html">MOUNTAINS</a></li>
       <li><a href="#map">MAP</a></li>
       <li><a href="#features">FEATURES</a></li>
@@ -101,26 +134,44 @@
         />
       </li>
     </ul>
-      <h1 id="map" class="title">MAP</h1>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5865409.20206498!2d-74.79710733826215!3d44.1252546129615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb2391901ee773f%3A0x541ee66d0cbba5ed!2sNew%20England!5e0!3m2!1sen!2sus!4v1678321059111!5m2!1sen!2sus"
-          width= 100%
-          height="600"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+    <h1 id="map" class="title">MAP</h1>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4582965.186462835!2d-74.79748664584639!3d44.11733559197015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb2391901ee773f%3A0x541ee66d0cbba5ed!2sNew%20England!5e1!3m2!1sen!2sus!4v1679695148642!5m2!1sen!2sus"
+        width="100%"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
     <h1 id="features" class="title">FEATURES</h1>
     <div class="container">
-      <div class="grid_item"><img src="https://blog.sport-conrad.com/wp-content/uploads/2021/11/header-atomic-revoshock-blog-1.jpg" alt="Atomic" height="400px" width="300px"></div>
-      <div class="grid_item"><img src="https://www.loonmtn.com/assets//images/Loon/Headers_1030/products/IKONPass_1030%280%29.jpg" alt="IKon" height="400px" width="300px"></div>
-      <div class="grid_item"><img src="http://d20aeo683mqd6t.cloudfront.net/articles/title_images/000/038/357/medium/niseko-japan-s611547902.jpg?2021" alt="Niseko" height="400px" width="300px"></div>
-      <div class="grid_item"><a href="https://www.atomic.com/en-us">GEAR UP NOW</a></div>
-      <div class="grid_item"><a href="https://www.ikonpass.com/">GET YOUR PASS</a></div>
-      <div class="grid_item"><a href="https://niseko-village.com/en/">EXPERINCE JAPOW</a></div>
+      <div class="grid_item1 imgs">
+        <img
+          src="https://www.k-g-k.com/wp-content/uploads/2020/01/ATOMIC_CLOUD_2020_2021_00002-1030x687.jpg"
+          alt="Atomic"
+        />
+      </div>
+      <div class="grid_item2 imgs">
+        <img
+          src="https://www.snowwaydown.com/wp-content/uploads/2022/04/WP-Ikon-blog-1024x682-1.jpg"
+          alt="IKon"
+        />
+      </div>
+      <div class="grid_item3 imgs">
+        <img src="images/niseko.jpg" alt="Niseko" />
+      </div>
+      <div class="grid_item4 links">
+        <a href="https://www.atomic.com/en-us">GEAR UP NOW</a>
+      </div>
+      <div class="grid_item5 links">
+        <a href="https://www.ikonpass.com/">GET YOUR PASS</a>
+      </div>
+      <div class="grid_item6 links">
+        <a href="https://niseko-village.com/en/">EXPERINCE JAPOW</a>
+      </div>
     </div>
   </body>
 </html>

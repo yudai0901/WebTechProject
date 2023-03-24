@@ -1,12 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mountains</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      body {
+        margin: 0;
+        background-color: #fffdfd;
+      }
+      .logo {
+        margin-top: -5px;
+        height: 30px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: #fffdfd;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: sticky;
+        top: 0;
+      }
+      .header a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .header a:hover {
+        color: #cb2b19;
+      }
+      .landing_img {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+      }
+      .landing_quote {
+        position: relative;
+        z-index: 1;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        top: -220px;
+        text-align: center;
+        color: white;
+        margin-bottom: -100px;
+      }
+      table {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+      }
+      td {
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+      }
+      td img {
+        height: 200px;
+        width: 200px;
+      }
+      td a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="header">
+      <li>
+        <a href="index.html"><img class="logo" src="images/logo2.png" alt="Logo" /></a>
+      </li>
+      <li><a href="#">MOUNTAINS</a></li>
+      <li><a href="index.html">MAP</a></li>
+      <li><a href="index.html">FEATURES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+    <img
+      class="landing_img"
+      src="https://pelorusx.com/wp-content/uploads/2020/08/dolomites-italy-summer.jpg"
+      alt="landing"
+    />
+    <p class="landing_quote">FIND YOUR MOUNTAIN</p>
+    <table>
+      <tr>
+        <td>
+          <img
+            src="https://cdn.knoji.com/images/logo/wachusettcom.jpg"
+            alt="Wachusett"
+          />
+        </td>
+        <td>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Loon_Mountain_Logo.png"
+            alt="Loon"
+          />
+        </td>
+        <td>
+          <img
+            src="https://i0.wp.com/skinewengland.com/wp-content/uploads/2019/06/mount-sunapee-logo.png?"
+            alt="Sunapee"
+          />
+        </td>
+        <td>
+          <img
+            src="https://logovtor.com/wp-content/uploads/2021/11/killington-logo-vector.png"
+            alt="Killington"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><a href="https://www.wachusett.com/">Wachusett</a></td>
+        <td><a href="https://www.loonmtn.com/">Loon</a></td>
+        <td><a href="https://www.mountsunapee.com/">Sunapee</a></td>
+        <td><a href="https://www.killington.com/">Killington</a></td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://www.hrknowledge.com/wp-content/uploads/2015/11/logo-sundayriver.jpg"
+            alt="Sundayriver"
+          />
+        </td>
+        <td>
+          <img
+            src="https://www.rei.com/media/75708240-0639-40b2-a31b-cb62eb6b1f31.jpg?size=784x588"
+            alt="Waterville"
+          />
+        </td>
+        <td>
+          <img
+            src="https://d3vsguwj4bxh9r.cloudfront.net/uploads/auction/item/image/313727/big_image_patspeak.jpeg"
+            alt="Patspeak"
+          />
+        </td>
+        <td>
+          <img
+            src="https://www.bigairbag.com/app/uploads/2011/08/gunstock-680l.jpg"
+            alt="Gunstock"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><a href="https://www.sundayriver.com/">Sunday River</a></td>
+        <td><a href="https://www.waterville.com/">Waterville</a></td>
+        <td><a href="https://www.patspeak.com/">Pats Peak</a></td>
+        <td><a href="https://www.gunstock.com/">Gunstock</a></td>
+      </tr>
+    </table>
+  </body>
 </html>
