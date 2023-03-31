@@ -25,6 +25,7 @@
         padding-bottom: 10px;
         position: sticky;
         top: 0;
+        z-index: 2;
       }
       .header a {
         text-decoration: none;
@@ -62,6 +63,38 @@
         margin-right: 20px;
         margin-left: 20px;
       }
+      .mountain_link{
+        font-size: 35px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: rgb(126, 203, 228);
+      }
+      .title_services{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 550;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "img1 img2 img3 img4 img5 img6 img6"
+          "titles1 titles2 titles3 titles4 titles5 titles6 titles7"
+          "stats1 stats2 stats3 stats4 stats5 stats6 state7";
+        justify-items: center;
+      }
+      .titles{
+        margin-top: -15px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+      }
+      .stats{
+        margin-top: -25px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 550;
+      }
     </style>
   </head>
   <body>
@@ -86,10 +119,10 @@
           height="600"
           width="1000"
         />
-      </li>
+      </li> 
     </ul>
     <p class="description">
-      Wachusett Mountain, located in Princeton, Massachusetts, is a popular
+      <a class="mountain_link" href="https://www.wachusett.com/">WACHUSETT MOUNTAIN</a>, located in Princeton, Massachusetts, is a popular
       destination for outdoor enthusiasts and nature lovers. Boasting an
       elevation of 2,006 feet, the mountain provides breathtaking views of the
       surrounding landscape, including the Boston skyline on clear days. As a
@@ -104,5 +137,43 @@
       beauty, Wachusett Mountain serves as a scenic getaway for those seeking
       adventure, relaxation, and an escape from the bustling urban life.
     </p>
+    <p class="title_services">SERVICES</p>
+    <div class="container">
+      <div class="grid_item1 imgs">
+        <img src="images/price-tag.png" alt="price" height="100px" />
+      </div>
+      <div class="grid_item2 imgs">
+        <img src="images/calendar.png" alt="calender" height="100px" />
+      </div>
+      <div class="grid_item3 imgs">
+        <img src="images/ski-pass.png" alt="pass" height="100px" />
+      </div>
+      <div class="grid_item4 imgs">
+        <img src="images/night-mode.png" alt="night" height="100px" />
+      </div>
+      <div class="grid_item5 imgs">
+        <img src="images/restaurant.png" alt="restaurant" height="100px" />
+      </div>
+      <div class="grid_item6 imgs">
+        <img src="images/cocktail.png" alt="bar" height="100px" />
+      </div>
+      <div class="grid_item7 imgs">
+        <img src="images/ev.png" alt="charging" height="100px" />
+      </div>
+      <div class="grid_item8 titles"><p>Price</p></div>
+      <div class="grid_item9 titles"><p>Open Dates</p></div>
+      <div class="grid_item10 titles"><p>Season Pass</p></div>
+      <div class="grid_item11 titles"><p>Night Skiing</p></div>
+      <div class="grid_item12 titles"><p>Restaurants</p></div>
+      <div class="grid_item13 titles"><p>Bars</p></div>
+      <div class="grid_item14 titles"><p>EV Charging</p></div>
+      <div class="grid_item15 stats"><p>~$76</p></div>
+      <div class="grid_item16 stats"><p>Nov23~Apr3</p></div>
+      <div class="grid_item17 stats"><p>None</p></div>
+      <div class="grid_item18 stats"><p>7:00~9:30</p></div>
+      <div class="grid_item19 stats"><p>7</p></div>
+      <div class="grid_item20 stats"><p>3</p></div>
+      <div class="grid_item21 stats"><p>None</p></div>
+    </div>
   </body>
 </html>
