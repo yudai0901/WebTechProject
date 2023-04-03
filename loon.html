@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loon</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #fffdfd;
+      }
+      .logo {
+        margin-top: -5px;
+        height: 30px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: #fffdfd;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+      .header a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .header a:hover {
+        color: #cb2b19;
+      }
+      .over {
+        display: flex;
+        margin: 0;
+        list-style: none;
+        justify-content: flex-end;
+      }
+      .mountain_name {
+        position: relative;
+        z-index: 0;
+        top: 300px;
+        left: 200px;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+        color: rgb(100, 114, 129);
+        text-shadow: -0.4px -0.4px 0 white, 0.4px -0.4px 0 white,
+          -0.4px 0.4px 0 white, 0.4px 0.4px 0 white;
+      }
+      .description {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      .mountain_link{
+        font-size: 35px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: rgb(126, 203, 228);
+      }
+      .title_services{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 550;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "img1 img2 img3 img4 img5 img6 img6"
+          "titles1 titles2 titles3 titles4 titles5 titles6 titles7"
+          "stats1 stats2 stats3 stats4 stats5 stats6 state7";
+        justify-items: center;
+      }
+      .titles{
+        margin-top: -15px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+      }
+      .stats{
+        margin-top: -25px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 550;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="header">
+      <li>
+        <a href="index.html"
+          ><img class="logo" src="images/logo2.png" alt="Logo"
+        /></a>
+      </li>
+      <li><a href="mountains.html">MOUNTAINS</a></li>
+      <li><a href="index.html">MAP</a></li>
+      <li><a href="index.html">FEATURES</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+    <ul class="over">
+      <li><h1 class="mountain_name">Loon Mountain</h1></li>
+      <li>
+        <img
+          class="trail_map"
+          src="https://skimap.org/data/352/7/1229044641.jpg"
+          alt="map"
+          height="600"
+          width="1000"
+        />
+      </li> 
+    </ul>
+    <p class="description">
+      <a class="mountain_link" href="https://www.loonmtn.com/">LOON MOUNTAIN</a>, nestled in the heart of New Hampshire's majestic White Mountains, is a breathtaking destination that captivates nature enthusiasts and adventure seekers alike. As you ascend the mountain, vibrant green forests of spruce and pine envelope you, their branches swaying gently in the crisp, fresh air. The steady hum of the gondola carries visitors upward, offering panoramic views of the undulating landscape that stretches for miles, dotted with serene lakes and snaking rivers. In winter, the mountain transforms into a powdery paradise, with pristine snow-covered slopes that beckon skiers and snowboarders to carve their way down the exhilarating trails. Summer months see Loon Mountain burst to life with a kaleidoscope of wildflowers, as hikers navigate the labyrinth of trails, discovering hidden waterfalls and scenic vistas at every turn. No matter the season, Loon Mountain is a veritable playground, offering unforgettable experiences and memories to last a lifetime.
+    </p>
+    <p class="title_services">SERVICES</p>
+    <div class="container">
+      <div class="grid_item1 imgs">
+        <img src="images/price-tag.png" alt="price" height="100px" />
+      </div>
+      <div class="grid_item2 imgs">
+        <img src="images/calendar.png" alt="calender" height="100px" />
+      </div>
+      <div class="grid_item3 imgs">
+        <img src="images/ski-pass.png" alt="pass" height="100px" />
+      </div>
+      <div class="grid_item4 imgs">
+        <img src="images/night-mode.png" alt="night" height="100px" />
+      </div>
+      <div class="grid_item5 imgs">
+        <img src="images/restaurant.png" alt="restaurant" height="100px" />
+      </div>
+      <div class="grid_item6 imgs">
+        <img src="images/cocktail.png" alt="bar" height="100px" />
+      </div>
+      <div class="grid_item7 imgs">
+        <img src="images/ev.png" alt="charging" height="100px" />
+      </div>
+      <div class="grid_item8 titles"><p>Price</p></div>
+      <div class="grid_item9 titles"><p>Open Dates</p></div>
+      <div class="grid_item10 titles"><p>Season Pass</p></div>
+      <div class="grid_item11 titles"><p>Night Skiing</p></div>
+      <div class="grid_item12 titles"><p>Restaurants</p></div>
+      <div class="grid_item13 titles"><p>Bars</p></div>
+      <div class="grid_item14 titles"><p>EV Charging</p></div>
+      <div class="grid_item15 stats"><p>~$80</p></div>
+      <div class="grid_item16 stats"><p>Nov23~Apr3</p></div>
+      <div class="grid_item17 stats"><p>Ikon Pass</p></div>
+      <div class="grid_item18 stats"><p>None</p></div>
+      <div class="grid_item19 stats"><p>7</p></div>
+      <div class="grid_item20 stats"><p>3</p></div>
+      <div class="grid_item21 stats"><p>3</p></div>
+    </div>
+  </body>
+</html>
